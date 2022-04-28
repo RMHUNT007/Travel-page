@@ -1,0 +1,68 @@
+body {
+  background: linear-gradient(45deg, rgb(77, 73, 73), rgb(106, 104, 105));
+}
+
+header {
+  position: static;
+}
+
+#page-logo a {
+  color: rgb(126, 212, 247);
+}
+header a {
+  color: rgb(137, 230, 255);
+}
+
+header nav a:hover {
+  background-color: rgb(76, 136, 147);
+  color: rgb(159, 227, 248);
+}
+main ul {
+  width: 1200px;
+  margin: 0px auto 48px auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px 20px;
+}
+
+main li {
+  display: flex;
+  background-color: white;
+  box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+:nth-of-type(3) {
+  grid-column: 1 / span 2;
+}
+
+main li img {
+  width: 300px;
+  height: 280px;
+  object-fit: cover;
+}
+
+.item-content {
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.item-content h2{
+  margin: 0px;
+}
+
+.actions {
+  text-align: right;
+}
+.actions a {
+  text-decoration: none;
+  color: rgb(121, 210, 254);
+  padding: 6px;
+  border-radius: 5px;
+}
+
+.actions a:hover {
+  background-color: rgb(232, 254, 254);
+}
